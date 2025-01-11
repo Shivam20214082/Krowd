@@ -1,0 +1,129 @@
+/* General app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Content styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Heading for the item list */
+.list-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Input and button container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.item-input {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  max-width: 80%;
+  transition: border 0.3s ease;
+}
+
+.item-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Add Item button styling */
+.add-button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Item list styling */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+  max-width: 80%;
+}
+
+/* Individual item styling */
+.item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.item:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Footer styling */
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer text styling */
+.header-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .item-input {
+    width: 180px;
+  }
+
+  .add-button {
+    padding: 10px 20px;
+  }
+
+  .item-list {
+    width: 100%;
+  }
+}
